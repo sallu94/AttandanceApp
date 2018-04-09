@@ -1,4 +1,4 @@
-package com.attandancemgmt.app.model.persistance.dto;
+package com.attendancemgmt.app.model.persistance.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

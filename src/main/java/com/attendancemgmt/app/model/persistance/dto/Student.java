@@ -1,4 +1,4 @@
-package com.attandancemgmt.app.model.persistance.dto;
+package com.attendancemgmt.app.model.persistance.dto;
 
 import java.util.Date;
 
@@ -16,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Table(name = "student_info")
-@Entity
+@Entity(name="Student")
 public class Student {
 
 	@Id
@@ -60,10 +60,13 @@ public class Student {
 
 	@NotNull
 	@Length(min = 10, max = 10)
-	private long fathersContactNameOfStudent;
+	private long fathersContactNoOfStudent;
 
 	@NotNull
 	@Past
 	private Date dateOfBirthOfStudent;
+	
+	private int attandedLectures;
+	
 
 }

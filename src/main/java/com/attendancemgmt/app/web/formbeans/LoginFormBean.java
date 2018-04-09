@@ -1,4 +1,4 @@
-package com.attandancemgmt.app.web.formbeans;
+package com.attendancemgmt.app.web.formbeans;
 
 import javax.validation.constraints.NotBlank;
 

@@ -1,8 +1,10 @@
-package com.attandancemgmt.app.model.persistance.dto;
+package com.attendancemgmt.app.model.persistance.dto;
 
+import java.util.Date;
+
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 
@@ -11,11 +13,10 @@ import lombok.Data;
 @Table(name = "time_table_info")
 public class TimeTable {
 
-	@NotNull
-	private String teacherId;
-	
-	@NotNull
-	private String day;
+	@EmbeddedId
+	private Schedule schedule;
+
+	private Date date;
 	private String nine;
 	private String ten;
 	private String eleven;
