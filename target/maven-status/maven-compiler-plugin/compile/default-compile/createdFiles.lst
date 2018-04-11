@@ -1,0 +1,13 @@
+com\attendancemgmt\app\AttandanceManagementSystemApplication.class
+com\attendancemgmt\app\web\formbeans\LoginFormBean.class
+com\attendancemgmt\app\model\persistance\dao\StudentRepository.class
+com\attendancemgmt\app\model\serviceimpl\StudentServiceImpl.class
+com\attendancemgmt\app\web\controller\WebController.class
+com\attendancemgmt\app\model\persistance\dto\Schedule.class
+com\attendancemgmt\app\model\service\StudentService.class
+com\attendancemgmt\app\model\persistance\dto\TimeTable.class
+com\attendancemgmt\app\SecurityConfig.class
+com\attendancemgmt\app\model\persistance\dto\Gender.class
+com\attendancemgmt\app\model\persistance\dto\TeacherInfo.class
+com\attendancemgmt\app\model\persistance\dto\Address.class
+com\attendancemgmt\app\model\persistance\dto\Student.class
