@@ -23,6 +23,11 @@ public class WebController {
 		return "login";
 	}
 	
+	@GetMapping("/menu")
+	public String lo() {
+		return "menu";
+	}
+	
 	@ModelAttribute(value = "gender")
 	public Gender[] getAccountBranch() {
 		return Gender.values();
