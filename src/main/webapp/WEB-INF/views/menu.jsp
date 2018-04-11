@@ -12,7 +12,18 @@
 		<link rel="stylesheet" href="css/style.css">	
     </head>
     <body>
-        <div class="wrapper">
+
+
+<nav class="navbar navbar-default" style="background-color: #7386D5">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a href="#" class="navbar-brand">Brand</a>
+    </div>
+
+</nav>
+<div class="wrapper">
             <nav id="sidebar">
                 <div class="sidebar-header">
                 	<div class="col-sm-12">
