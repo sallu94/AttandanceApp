@@ -1,8 +1,12 @@
 package com.attendancemgmt.app.model.persistance.dao;
 
+import java.util.ArrayList;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import com.attendancemgmt.app.model.persistance.dto.Student;
+
 
 public interface StudentRepository extends JpaRepository<Student, String> {
 
@@ -12,7 +16,9 @@ public interface StudentRepository extends JpaRepository<Student, String> {
 	@Query("select * from student_info where roll_no_of_student := rollNoOfStudent")
 	Student findStudentByRollNoOfStudent(String rollNoOfStudent);
 
-	@Query("select * from student_info where course_of_student := courseOfStudent")
-	List<Student> findStudentByCourseOfStudent(String courseOfStudent);
 */
+	
+	@Query("SELECT t FROM Student t WHERE t.courseOfStudent = :courses")
+	public ArrayList<Student> findStudentByCourseOfStudent(String course);
+
 }
